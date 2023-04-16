@@ -2,9 +2,9 @@ require 'httparty'
 
 class Customer
 
-  def initialize(x-env)
+  def initialize(xenv)
     @options = {
-        'x-env' => x-env
+        'xenv' => xenv
     }
   end
 

@@ -1,12 +1,12 @@
 
 Before('@smoke') do |scenario|
   puts "Printing before smoke hook"
-  x-env = ENV['x-dev']
-  $cust = Customer.new(x-env)
+  xenv = ENV['xdev']
+  $cust = Customer.new(xenv)
 end
 
 Before('@regression') do |scenario|
   puts "Printing before regression hook"
-  x - env = ENV['x-qa']
-  $cust = Customer.new(x-env)
+  xenv = ENV['xqa']
+  $cust = Customer.new(xenv)
 end

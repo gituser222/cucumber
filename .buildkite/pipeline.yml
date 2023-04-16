@@ -2,9 +2,9 @@ steps:
   - input: "Select Environment"
     fields:
       - text: "Env env for Dev"
-        key: "x-dev"
+        key: "xdev"
       - text: "Env env for QA"
-        key: "x-qa"
+        key: "xqa"
   - wait
   - label: ":cucumber: $TEST_ENV"
     command: "run.sh"

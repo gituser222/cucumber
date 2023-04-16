@@ -1,11 +1,11 @@
-x-dev = buildkite-agent meta-data get "x-dev"
-echo "x-dev =" $x-dev
+xdev = buildkite-agent meta-data get "xdev"
+echo "xdev =" $xdev
 
-x-dev = buildkite-agent meta-data get "x-qa"
-echo "x-qa =" $x-qa
+xqa = buildkite-agent meta-data get "xqa"
+echo "xqa =" $xqa
 
 echo "Start the docker build"
 docker build --tag mytest .
 
 echo "Start running the docker container"
-docker run --rm mytest --env x-dev=$x-dev --env x-qa=$x-qa
+docker run --rm --env xdev=$xdev --env xqa=$xqa mytest
