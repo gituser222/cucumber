@@ -1,0 +1,10 @@
+steps:
+  - input: "Select Environment"
+    fields:
+      - select: "Env env for Dev"
+        key: "x-dev"
+      - select: "Env env for QA"
+        key: "x-qa"
+  - wait
+  - label: ":cucumber: $TEST_ENV"
+    command: "run.sh"
