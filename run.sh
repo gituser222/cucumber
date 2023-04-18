@@ -1,7 +1,7 @@
-xdev = buildkite-agent meta-data get "xdev"
+xdev = $(buildkite-agent meta-data get xdev)
 echo "xdev =" $xdev
 
-xqa = buildkite-agent meta-data get "xqa"
+xqa = $(buildkite-agent meta-data get xqa)
 echo "xqa =" $xqa
 
 echo "Start the docker build"
