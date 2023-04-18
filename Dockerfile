@@ -4,5 +4,6 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY . /usr/src/app
 
+RUN gem install bundler:2.1.4
 RUN bundle install
 CMD ["bundle exec cucumber"]
