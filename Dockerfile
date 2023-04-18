@@ -10,4 +10,4 @@ RUN echo $PWD
 RUN cd features
 RUN echo "ls"
 RUN ls
-CMD ["bundle exec cucumber test1.feature"]
+CMD ["cucumber", "bundle", "exec", "features/test1.feature"]
