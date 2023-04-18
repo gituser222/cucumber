@@ -7,4 +7,5 @@ COPY . /usr/src/app
 RUN gem install bundler:2.1.4
 RUN bundle install
 RUN echo $PWD
+RUN chmod +x ./runtests.sh
 CMD ./runtests.sh
