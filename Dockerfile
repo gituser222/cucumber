@@ -6,4 +6,4 @@ COPY . /usr/src/app
 
 RUN gem install bundler:2.1.4
 RUN bundle install
-CMD ["bundle exec cucumber"]
+CMD ["bundle exec cucumber features/test1.feature"]
