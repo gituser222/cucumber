@@ -7,4 +7,4 @@ COPY . /usr/src/app
 RUN gem install bundler:2.1.4
 RUN bundle install
 RUN echo $PWD
-CMD ["bundle exec cucumber", "features/test1.feature"]
+CMD ./runtests.sh

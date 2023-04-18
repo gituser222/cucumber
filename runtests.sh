@@ -1,0 +1,1 @@
+bundle exec cucumber features/test1.feature
