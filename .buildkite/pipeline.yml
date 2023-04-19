@@ -6,5 +6,5 @@ steps:
       - text: "Env env for QA"
         key: "xqa"
   - wait
-  - label: ":cucumber: $TEST_ENV"
+  - label: ":salesforce: $TEST_ENV"
     command: "run.sh"
