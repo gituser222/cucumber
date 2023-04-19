@@ -1,6 +1,6 @@
 echo "xdev =" $(buildkite-agent meta-data get xdev)
 
-x = $(buildkite-agent meta-data get xdev)
+x=$(buildkite-agent meta-data get xdev)
 echo "x="
 echo $x
 
