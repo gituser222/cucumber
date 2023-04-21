@@ -1,2 +1,2 @@
-echo $(buildkite-agent meta-data get feature)
-bundle exec cucumber features/$(buildkite-agent meta-data get feature).feature
+echo "ENV['feature_file'] =" ENV['feature_file']
+bundle exec cucumber features/ENV['feature_file'].feature
