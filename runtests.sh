@@ -1,1 +1,2 @@
-bundle exec cucumber features/test1.feature
+echo $(buildkite-agent meta-data get feature)
+bundle exec cucumber features/$(buildkite-agent meta-data get feature).feature

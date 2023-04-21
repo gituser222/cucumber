@@ -5,6 +5,8 @@ steps:
         key: "xdev"
       - text: "Env env for QA"
         key: "xqa"
+      - text: "Enter feature file or tag name"
+        key: "feature"
   - wait
   - label: ":cucumber: $TEST_ENV"
     command: "run.sh"
