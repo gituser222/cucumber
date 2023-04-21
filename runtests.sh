@@ -1,2 +1,4 @@
-echo "ENV['feature_file'] =" ENV['feature_file']
-bundle exec cucumber features/ENV['feature_file'].feature
+puts ENV["feature_file"]
+ff = ENV["feature_file"]
+puts "ff=" ff
+bundle exec cucumber features/f+".feature"
