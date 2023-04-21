@@ -1,4 +1,4 @@
-puts ENV["feature_file"]
-ff = ENV["feature_file"]
+puts ENV["feature"]
+ff = ENV["feature"]
 puts "ff=" ff
-bundle exec cucumber features/f+".feature"
+bundle exec cucumber features/ff+".feature"
