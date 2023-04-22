@@ -10,3 +10,6 @@ steps:
   - wait
   - label: ":cucumber: $TEST_ENV"
     command: "run.sh"
+  - wait
+  - label: "upload reports"
+    command: "upload.sh"
