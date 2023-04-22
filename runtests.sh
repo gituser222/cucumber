@@ -1,1 +1,1 @@
-bundle exec cucumber features/$feature
+bundle exec cucumber features/$feature --format summary --format html --out report.html
