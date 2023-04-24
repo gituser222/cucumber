@@ -11,5 +11,5 @@ steps:
   - label: ":cucumber: $TEST_ENV"
     command:
       - "run.sh"
-      - wait
-      - "upload.sh"
+      artifact_paths:
+        - "*.html"
