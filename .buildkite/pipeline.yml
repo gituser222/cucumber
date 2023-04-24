@@ -8,8 +8,8 @@ steps:
       - text: "Enter feature file or tag name"
         key: "feature"
   - wait
-  - label: ":cucumber: $TEST_ENV"
+  - label: ":cucumber: Run tests"
     command:
       - "run.sh"
-      artifact_paths:
-        - "*.html"
+    artifact_paths:
+      - "*.html"
