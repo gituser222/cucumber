@@ -9,6 +9,7 @@ steps:
         key: "feature"
   - wait
   - label: ":cucumber: $TEST_ENV"
-    command: "run.sh"
-  - wait
-    command: "upload.sh"
+    command:
+      - "run.sh"
+      - wait
+      - "upload.sh"
