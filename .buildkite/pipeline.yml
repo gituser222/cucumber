@@ -1,0 +1,15 @@
+steps:
+  - input: "Select Environment"
+    fields:
+      - text: "Env env for Dev"
+        key: "xdev"
+      - text: "Env env for QA"
+        key: "xqa"
+      - text: "Enter feature file or tag name"
+        key: "feature"
+  - wait
+  - label: ":cucumber: Run tests"
+    command:
+      - "run.sh"
+    artifact_paths:
+      - "./*.html"
