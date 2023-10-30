@@ -16,14 +16,14 @@ Then("some results should be there") do
 end
 
 Given("I click on given") do
-  puts "Given statement executed"
+  p "Given statement executed"
   $cust.get_request
 end
 
 When("I click on when") do
-  puts "When statement executed"
+  p "When statement executed"
 end
 
 Then("I see some results") do
-  puts "I see some results"
+  p "I see some results"
 end
