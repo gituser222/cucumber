@@ -9,7 +9,6 @@ WORKDIR /usr/src/app
 
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
-RUN rm /usr/local/bundle/config
 
 COPY . .
 
