@@ -11,5 +11,5 @@ COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
 COPY . .
-
+RUN chmod +x ./runtests.sh
 CMD ["./runtests.sh"]
