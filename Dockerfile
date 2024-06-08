@@ -7,7 +7,6 @@ RUN bundle config --global frozen 1
 
 WORKDIR /usr/src/app
 
-COPY .bundle/config /usr/local/bundle/
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
 RUN rm /usr/local/bundle/config
