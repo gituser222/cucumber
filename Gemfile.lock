@@ -79,6 +79,7 @@ GEM
 
 PLATFORMS
   x86-mingw32
+  universal-java-1.8
 
 DEPENDENCIES
   cucumber (~> 4.0)
