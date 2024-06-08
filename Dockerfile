@@ -1,11 +1,17 @@
-FROM ruby:2.6.6-alpine3.13
+FROM jruby:9.3
 
-RUN mkdir -p /usr/src/app
+ENV TZ=Australia/Sydney
+
+# throw errors if Gemfile has been modified since Gemfile.lock
+RUN bundle config --global frozen 1
+
 WORKDIR /usr/src/app
-COPY . /usr/src/app
 
-RUN gem install bundler:2.1.4
+COPY .bundle/config /usr/local/bundle/
+COPY Gemfile Gemfile.lock ./
 RUN bundle install
-RUN echo $PWD
-RUN chmod +x ./runtests.sh
-CMD ./runtests.sh
+RUN rm /usr/local/bundle/config
+
+COPY . .
+
+CMD ["./runtests.sh"]
