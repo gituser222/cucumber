@@ -11,4 +11,5 @@ COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
 COPY . .
-RUN cucumber --tag @regression
+RUN cucumber --tag @regression -f pretty -f json -o results.json
+RUN report_builder -o my_report_file
