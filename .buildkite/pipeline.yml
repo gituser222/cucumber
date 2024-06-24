@@ -10,6 +10,6 @@ steps:
   - wait
   - label: ":cucumber: Run tests"
     command:
-      - "runtest.sh"
+      - "runtests.sh"
     artifact_paths:
       - "./*.html"
