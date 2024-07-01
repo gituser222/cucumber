@@ -52,6 +52,7 @@ GEM
       atomic (>= 1.1.7, < 2)
 
 PLATFORMS
+  universal-java-1.8
   universal-java-11
 
 DEPENDENCIES
