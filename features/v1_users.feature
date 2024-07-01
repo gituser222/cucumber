@@ -1,3 +1,4 @@
+@sanity
 Feature: https://reqres.in/api/users
 
     @sanity
