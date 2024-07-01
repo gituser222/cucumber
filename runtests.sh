@@ -1,2 +1,2 @@
-cucumber --tag @regression -f pretty -f json -o results.json
+cucumber --tag @sanity -f pretty -f json -o results.json
 report_builder -o my_report_file

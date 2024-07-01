@@ -1,6 +1,6 @@
 Feature: https://reqres.in/api/users
 
-    @smoke
+    @sanity
     Scenario: Call request
       When I call the users endpoint
       Then the response code should be 200
